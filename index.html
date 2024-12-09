@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="fevio.png">
+    <title>Currency Converter</title>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form>
+            <p>Enter Amount: </p>
+            <input type="number" value="10">
+
+            <div class="to">
+                <div class="cont">
+                    <div class="CF">Convert From: </div>
+                    <div class="CT">Convert To: </div>
+                </div>
+
+                <div class="cont">
+                <select name="Currency" id="select1">
+                    <option value="usd">US Dollar</option>
+                    <option value="btc">Bitcoin</option>
+                    <option value="eth">Ethereum</option>
+                    <option value="pkr">Pakistani Rupees</option>
+                </select>
+                <select name="Currency2" id="select2">
+                    <option value="btc">Bitcoin</option>
+                    <option value="eth" selected>Ethereum</option>
+                    <option value="pkr">Pakistani Rupees</option>
+                    <option value="usd">US Dollar</option>
+                </select>
+                </div>
+            </div>
+            <div class="result">1 USD = 278 PKR</div>
+
+            <div class="button">
+                <button id="btn">Get Exchange Rate</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
